@@ -21,4 +21,6 @@ def race():
 @app.route('/sources', methods=['GET'])
 def sources():
     return render_template('ww2.html'), 200
-app.run(port=2121, debug=True)
+
+if __name__ == '__main__':
+    app.run()
