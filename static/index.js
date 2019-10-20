@@ -52,11 +52,12 @@ function checkMode() {
 
 function darkMode () {
   $("body").css('background-color', '#221E20');
-  $("body").css('color', 'white')
+  $("body").css('color', '#fae5d3')
   $(".jumbotron").css('color', '#F1B379');
   $('.list-link').css('background-color', '#d7dbdd')
   $('.list-link').css('color', 'black')
   $('.list-link.active').css('background-color', '#007BFF')
+  $('.caption').css('color', ' #aeb6bf')
   document.cookie = "mode=dark"
 }
 
@@ -64,8 +65,9 @@ function lightMode () {
   $("body").css('background-color', 'white');
   $("body").css('color', 'black');
   $(".jumbotron").css('color', 'white');
+  $('.jumbotron').css('color', '#85c1e9')
   $('.list-link').css('background-color', '#221E20')
-  $('.list-link').css('color', '#F1B379')
+  $('.list-link').css('color', '#85c1e9')
   $('.list-link').css('border-color', '#d7dbdd')
   $('.list-link.active').css('background-color', '#007BFF')
   document.cookie = "mode=light"
