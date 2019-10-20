@@ -1,0 +1,112 @@
+<head>
+    <title>Current Day Uses</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<script>
+    $('#myList a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    });
+    const routes = {'home' : '/', 'uses' : '/ww2', 'current' : '/current', 'race' : '/race', 'sources' : '/sources'};
+    const redirectToRoute = (route) => {
+        window.location.href = routes[route]
+    };
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id="brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ww2">Uses During WWII</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/race">The Nuclear Arms Race</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/current">Current Day Uses</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/sources">[Sources]</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary mode-toggle-dark" id="dark-mode">Dark Mode</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary mode-toggle-light" id="light-mode">Light Mode</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="jumbotron" style="width: 100%; background-color: #221E20; color: white">
+            <h3 class="display-4 discoders-alt animate bounceIn text-center">Current Day Uses</h2>       
+        </div>
+    </div>
+
+    <div class="container" style="text-align: left;">
+        <div class="container-fluid" id="main-paragraph">
+            <h4 class="animate bounceIn text-center underline">Nuclear Power</h4>
+            <p>In December of 1942, the first self-sustaining nuclear reaction occurred at the University of Chicago. After realizing the immense amounts of energy and power these reactions gave off, scientists quickly realized that this energy had the possibility of being weaponized. And through that came the <a class="source" href="/ww2#manhattan-paragraph">Manhattan Project</a>, and other significant projects leading nuclear arms development in the United States. However, some scientists geared their focus to researching the possible use of atomic fission as a means of producing electricity. In the post-war United States, the major goal of nuclear research was to show that nuclear energy could be used to product energy for commercial use. Shippingport, Pennsylvania housed the first commercial electricity-generating powerplant, and the industry started to rapidly privatize afterwards. Light-water reactors were becoming the norm, they worked by using ordinary water to cool the reactor core during chain reaction, and then converting that steam to electrical energy by spinning a turbine to generate power. Through the rest of thr 60s, power industry grew rapidly in the United States but it was not until the 70s and 80s that questions were raised towards the safety of nuclear power reactors. Issues were raised concerning waste disposal and radiation and growth of nuclear energy in the United States slowed. Concerns with nuclear power plants are:</p>
+            <p class="quote">
+                - Risk of meltdown <br>
+                - Risk of miners getting lung cancer due to the large amounts of radon gas in uranium mines <br>
+                - Radioactive waste from power plants
+            </p>
+        </div>   
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/PWR_nuclear_power_plant_diagram.svg" style="max-width:30em; display:block; margin:auto;">
+
+        <p class="caption">[Diagram of a Nuclear Power Plant]</p>
+
+        <p>However, even with these concerns being raised, the usage of nuclear power plants was not stopped. The number of nuclear power plants being made declined, and it was due to these risks as well as nuclear power being much more expensive than other means of generating electricity such as wind and water turbines. According to the <a class="source" href="https://www.eia.gov/tools/faqs/faq.php?id=207&t=3">U.S. Energy Information and Administration</a>, there are still 59 commercially operating nuclear power plants in the United States with a total of 97 total nuclear reactors. With 450 total reactors in the world [World Nuclear Association], the United States is still generating 805 terawatt-hours of nuclear generated energy per year. </p>
+
+        <img src="https://www.carbonbrief.org/wp-content/uploads/2016/03/Corbis-RM-nuclear-power-station-2.jpg" style="max-width:30em; display:block; margin:auto;">
+        <p class="caption">[Diagram of a Nuclear Power Plant]</p>
+
+        <p>The United States' compliance with scientists and researchers observing atomic fission and nuclear energy in the World War II era still has a lasting impact on the United States and the rest of the world to this day. Nuclear power was seen as a good, clean way of generating power for more than 25 years after the war and brought a lot of electrical power to the United States that could not have been done with existing methods. But questions still remain to this day surrounding the remaining use of nuclear power, especially after the <a class="source" href="https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/fukushima-accident.aspx"> Fukushima power plant incident.</a>Should existing nuclear power plants remain running, or should governments cease the use of nuclear power completely?</p>
+    </div>
+
+
+    <div class="container" style="text-align: left;">
+        <h4 class="animate bounceIn text-center underline">Other Applications of Nuclear Technology</h4>
+        <div class="container-fluid" id="uses-list">
+            <div class="row">
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action list-link" id="list-mutation-list" data-toggle="list" href="#list-mutation" role="tab" aria-controls="mutation">Plant mutation breeding</a>
+                    <a class="list-group-item list-group-item-action list-link" id="list-irradiation-list" data-toggle="list" href="#list-irradiation" role="tab" aria-controls="irradiation">Food Irradiation</a>
+                    <a class="list-group-item list-group-item-action list-link" id="list-medicine-list" data-toggle="list" href="#list-medicine" role="tab" aria-controls="medicine">Medicine</a>
+                    <a class="list-group-item list-group-item-action list-link" id="list-inspection-list" data-toggle="list" href="#list-inspection" role="tab" aria-controls="inspection">Inspection</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-mutation" role="tabpanel" aria-labelledby="list-mutation-list">Breeders expose seeds to radiation in order to create mutuations that are more desirable than the initial subject. These mutations can leed to breeding with other species to create even more desirable cultivars.
+                    </div>
+                    <div class="tab-pane fade" id="list-irradiation" role="tabpanel" aria-labelledby="list-irradiation-list">The application of ionizing radiation to food. This nuclear technology was designed to improve the safety and extend the shelf life of foods by using radiation to reduce or eliminate bacteria or insects that may be present in the food. Irradiation can prevent ilnesses and also delay sprouting of certain foods. The FDA evaluates the safety of irradiated foods, and approves only certain tested foods for irradiation. More facts and procedures on irradiation can be found <a class="source" href="https://www.fda.gov/food/buy-store-serve-safe-food/food-irradiation-what-you-need-know">here</a></div>
+                    <div class="tab-pane fade" id="list-medicine" role="tabpanel" aria-labelledby="list-medicine-list">The most well known use of radiation in the medicinal field is x-rays. X-rays work by producing a stream of radiation that then comes into contact with our body tissues and produce an imagine onto metal film. Denser materials in our body absorb the radiation, which is why we can see our bones in x-rays. Radioactive material and radiation is commonly used as a form of therapy, more specifically, to treat cancer. Similar to the goals of food irradiation, radiation therapy works by using radiation waves to destroy or damage cancer cells. </div>
+                    <div class="tab-pane fade" id="list-inspection" role="tabpanel" aria-labelledby="list-inspection-list">Radioisotopes are also commonly used as a form of inspection or gaining more information about a material. For example, naturally occuring radioisotopes are commonly used to determine the age of rocks and other materials. Radioisotopes are also commonly used to determine whether water is safe for consumption or not, as there can be naturally or artificially identified isotopes within a source of water. They can also give more information such as rainfall conditions, pollution processes, and evaporation processes. </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+</body>

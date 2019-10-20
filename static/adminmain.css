@@ -1,0 +1,29 @@
+.discoders {
+    color: #F1B379
+}
+
+.discoders-alt {
+    color: #221E20
+}
+.dbackground {
+    background-color: #221E20
+}
+
+.dbackground-alt {
+    background-color: #F1B379
+}
+
+body {
+    background-color: #221E20;
+    font-family: 'Roboto', sans-serif
+}
+
+.text-center {
+    text-align: center
+}
+
+.discoders-btn {
+    border-color: #F1B379;
+    color: #283747;
+    background-color: #F1B379
+}

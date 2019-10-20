@@ -1,0 +1,92 @@
+<head>
+    <title>The Nuclear Arms Race</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<script>
+    $('#myList a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    });
+    const routes = {'home' : '/', 'uses' : '/ww2', 'current' : '/current', 'race' : '/race', 'sources' : '/sources'};
+    const redirectToRoute = (route) => {
+        window.location.href = routes[route]
+    };
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id="brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ww2">Uses During WWII</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/race">The Nuclear Arms Race</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/current">Current Day Uses</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/sources">[Sources]</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary mode-toggle-dark" id="dark-mode">Dark Mode</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary mode-toggle-light" id="light-mode">Light Mode</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="jumbotron" style="width: 100%; background-color: #221E20; color: white">
+            <h3 class="display-4 discoders-alt animate bounceIn text-center">The Nuclear Arms Race</h2>       
+        </div>
+    </div>
+
+    <div class="container" style="text-align: left;">
+        <div class="container-fluid" id="cold-paragraph">
+            <h4 class="animate bounceIn text-center underline">The Cold War</h4>
+            <p>Shortly after World War II, tensions arose between the United States and the Soviet Union. Historians dub this time period as the "atomic age", because of opposing nations attempting to build a bigger, better, more explosive atomic bomb than the other. Im 1949, tensions were created between the United States and the Soviet Union when the Soviets tested an atom bomb of their own. The United States announced in opposition that the United States would build an even more destructive weapon than the one dropped during World War II, the hydrogen bomb. The Soviets followed in their footsteps. What stemmed this "arms race" is the American encouragement of research and development in the nuclear power and weapons industry. </p>
+
+            <p>Since times of early nuclear research, Americans had emphasized their desire to stay on top of nuclear arms research and development. They had successfully created and delivered not one, but two nuclear bombs during World War II. Americans wanted to be the biggest and scariest nuclear power and the Soviets were now jeopardizing their spot on the throne with their own development. Nuclear power was not just a means of destruction, it was also an indicator of how strong a nations economy was and how efficient their production was. The United States lead nuclear arms development, showing the Soviets and the rest of the world how economically efficient they were. Along with nuclear arms development, the United States made advances in nuclear power research and the development of nuclear power plants. This meant nothing to the United States, they felt that no matter what, any advances in Soviet development of nuclear weapons was a threat to the whole world. Once Kennedy became president in 1961, he expanded the American missile forces much further. Out of Kennedy's presidency stemmed the Cuban Missile Crisis, a time where the world was on the brink of nuclear warfare.</p>
+        </div> 
+        
+        <div class="container-fluid" id="cuban-paragraph">
+            <h4 class="animate bounceIn text-center underline">The Cuban Missile Crisis</h4>
+            <p>The Cuban Missile Crisis was a conflict stemmed in a Castro seized Cuban country. After taking power in 1959, Castro felt that it was necessary to align himself with the Soviet Union. Castro recognized that the Soviets were a major military power in the world and Cuba needed their backing. Being so close to the U.S. mainland, Cuba became a threat to national security. In 1962, a U.S. spy plane photographed a Soviet ballistic missile being assembled for installation while flying over Cuba. This was immediately reported to President Kennedy, and the president and his executive committee wrestled how to approach the issue. Kennedy and his team determined that it was unacceptable that these nuclear weapons be stationed in Cuba, only 90 miles from Florida. Kennedy ordered the United States Naval Forces to establish a blockade of the island so that the Soviets could not deliver the weapons. Kennedy went on a telivision broadcast a week after the missile was first discovered, and notified the United States' citizens on the presence of the missile and made it clear that the United States was willing to use military force and exercise their nuclear power to neutralize this threat to our national security. Americans and Soviets both feared that their countries were on the brink of nuclear war, but the symptoms of this fear were more apparent in America. Americans began to hoard food and gas, fearing that their countries economy would slow down.</p>
+             <h6 class="text-center" style="color: #F1B379">The Crisis Ends.</h6>
+            <p>The Soviets and Americans reached a deal, in which they outlined that the United States would not invade Cuba and remove their missile installations in Turkey if the USSR removed their missiles in Cuba. From this it is apparent that United States' military presence in Western Europe spiked fear in the Soviets, and reveals their intentions to why they installed missiles in Cuba. The Soviets recognized the United States' military presence and feared it. </p>
+        </div>
+
+        <div class="container-fluid" id="present-paragraph">
+            <h4 class="animate bounceIn text-center underline">Present Day Nuclear Tensions</h4>
+            <p>Present-day nuclear tensions are still apparent between the major military nations in the world. Nations test their nuclear weapons very frequently, and current day press does a good job of expressing their advancements and letting the whole world know about their testing. However, there is no joined-up international approach to controlling nuclear arms, and the issues between countries stems from a lack of this mandating power. Russia feels that they should expand their military power because of the US moving towards modernizing and expanding their nuclear program, and other nations follow such as North Korea and Iran follow in their footsteps. Trump has expressed his concern to expand our nuclear program, with his proposal of a 17 billion dollar expenditure to expand our nuclear arsenal with low-yield, tactical nuclear weapons that could be used on conventional battlefields. This is not a good sign for the future of warfare in the world, as they make nuclear warfare more likely because of less damage coming from low-yield weapons. </p>
+            
+            <img src="https://nationalinterest.org/sites/default/files/styles/desktop__1260_/public/main_images/Operation_Upshot-Knothole_-_Badger_001_8.jpg?itok=KwzMv7hQ" style="max-width:30em; display:block; margin:auto;">
+            <p class="caption">[Soviet Testing of a Nuclear Weapon]</p>
+            <h6 class="text-center" style="color: #F1B379">Conclusion</h6>
+            <p>All in all, the nuclear arms race stemmed from the United States' advancements in nuclear technology during WWII, and still exists to this day. Military powers are obsessed with having the biggest and most powerful nuclear weapons in the case that a nuclear war ever erupts. Countries also want to express the strength of their military by testing their nuclear weapons and making it known to the entire world that they possess the means to take out an entire country. The nuclear arms race is an everlasting problem, there is not an international committee to regulate nuclear arms development, so countries are free to roam this field however they may please. Going forward however, to prevent a nuclear war from breaking out, an intervening committee may be useful to prevent the population of the world from being decimated. </p>
+        </div>
+
+    </div>
+</body>

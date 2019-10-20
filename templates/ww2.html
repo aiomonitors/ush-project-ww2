@@ -1,0 +1,91 @@
+<head>
+    <title>Atomic Fission - WWII</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<script>
+    const routes = {'home' : '/', 'uses' : '/ww2', 'current' : '/current', 'race' : '/race', 'sources' : '/sources'};
+    const redirectToRoute = (route) => {
+        window.location.href = routes[route]
+    };
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id="brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ww2">Uses During WWII</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/race">The Nuclear Arms Race</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/current">Current Day Uses</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/sources">[Sources]</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary mode-toggle-dark" id="dark-mode">Dark Mode</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary mode-toggle-light" id="light-mode">Light Mode</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="jumbotron" style="width: 100%; background-color: #221E20; color: white">
+            <h3 class="display-4 discoders-alt animate bounceIn text-center">Atomic Fission During WWII</h2>       
+        </div>
+    </div>
+    <div class="container" style="text-align: left;">
+        <div class="container-fluid" id="main-paragraph">
+            <h4 class="animate bounceIn text-center underline">The Discovery of Atomic Fission - <a class="source" href="https://nsarchive2.gwu.edu/nukevault/ebb525-The-Atomic-Bomb-and-the-End-of-World-War-II/documents/001a.pdf">[Primary Source]</a></h4>
+            <p>In May of 1941, the President of the National Academy of Sciences was sent a report by the "Uranium Committee" headed by Lyman J. Briggs on their discoveries concering the concept of atomic fission. Dr.Briggs and his committee recommended that the government of the United States fund a large scale program in regards to atomic fission because "we must not risk giving an enemy nation the advantage of first putting atomic fission to military use." Dr.Briggs and his committee acknowledged that the soonest a nuclear weapon could be developed was 1943 which would be nuclear missiles. The three proposed uses of atomic fission were violent missiles, violently explosive bombs or as a power source on submarines and ships. However atomic fission was used, Dr.Briggs and his committee expressed heavily that the United States must not allow other major powers to make advances in nuclear technology before they do. </p>
+        </div>   
+        <img src="https://www.nuclear-power.net/wp-content/uploads/2014/10/nuclear_fission.jpg" style="max-width:30em; display:block; margin:auto;">
+        <p class="caption">[Diagram of Nuclear Fission]</p>
+    </div>
+
+    <div class="container" style="text-align: left;">
+        <div class="container-fluid" id="bombs-paragraph">
+            <h4 class="animate bounceIn text-center underline">The Manhattan Project</h4>
+            <p>The Manhattan Project was a project organized in August of 1942 by the government of the United States. The Manhattan Project had many operating locations, but the town of Oak Ridge, Tennessee (often referred to as the "Secret City") was a main facility of development of the nuclear weapons. The U.S. Government took many measures to make sure that this town was kept completely secret; workers were sworn to secrecy and the entire town and facility were fenced in. Tens of thousands of workers and their families resided in Oak Ridge, and most did not know what they were developing. Workers were told of the specific tasks they needed to complete and only given instructions on how to their respective tasks. More than 600,000 people worked on the Manhattan Project, and only the elite members of the project knew just what they were working on.</p>
+        </div>   
+        <img src="https://cdn.theatlantic.com/assets/media/img/photo/2012/06/the-secret-city/o05_61173130/main_1200.jpg?1420515863" style="max-width:30em; display:block; margin:auto;">
+        <p class="caption">[A sign urging workers in Oak Ridge to keep what they do classified]</p>
+    </div>
+
+    <div class="container" style="text-align: left;">
+        <div class="container-fluid" id="manhattan-paragraph">
+            <h4 class="animate bounceIn text-center underline">Dropping the Bombs - <a class="source" href="https://nsarchive2.gwu.edu/nukevault/ebb525-The-Atomic-Bomb-and-the-End-of-World-War-II/documents/009.pdf">[Primary Source]</a></h4>
+            <p>A document dated to May 2nd 1945 notes the initial meeting of the Target Committee. During this first meeting of the Target Committee, the Target Committee discussed plans to drop an atomic bomb on Japan, but had yet to figure out where the bomb should be placed. Weather was taken heavily into account, and August was seen as a main time period to drop the bomb(s). The Target Committee wanted to wreak havoc on Japan, taking mass urban and industrial centers into account. Hiroshima was taken into heavy consideration as it was the "largest untouched target not on the 21st Bomber Command priority list." The priority list mentioned was of the existing plan to drop 100,000 tons of bombs on Japanese cities through the end of 1945. Through the language of the NSA document from this initial meeting, it can be noted that the United States wanted to leave no mercy on Japan, they wanted to "bomb the hell out of Tokyo" and targeted major urban centers to wreak havoc on. </p>
+        </div>   
+        <img src="https://nsarchive2.gwu.edu/nukevault/ebb525-The-Atomic-Bomb-and-the-End-of-World-War-II/photos/hiroshima-4.jpg" style="max-width:30em; display:block; margin:auto;">
+        <p class="caption">[An overview of the destruction of Hiroshima (undated, circa August-September 1945). ]</p>
+
+        <p>In a [Insert document] noting the dropping of Little Boy on Hiroshima, it mentions that Hiroshima was chosen because it was the "one reserved target" where there was no indication of any POW camp. An account from Tinian Airport after the dropping notes that there were:</p>
+        <p class="quote">Two distinct shocks felt in combat airplane similar in intensity of close flak bursts. Entire city except outermost ends of dock areas was covered with a dark grey dust layer which joined the cloud column. It was extremely turbulent with flashes of fire visible in the dust. Estimated diameter of this dust layer is at least three miles. One observer stated it looked as though the whole town was being torn apart with columns of dust rising out of valleys approaching the town. Due to dust visual observation of structural damage could not be made.</p>
+        <p>The bombs did their job. They tore apart the city of Hiroshima and left nothing standing. It was as explosive and destructive as the Uranium Committee had said it would be. To a psychological level, it had demoralized the Japanese. In a transcript of Japan's Foreign Minister Togo's encounter with the Japanese Emperor, he notes that "His Majesty observed that, now with this kind of weapon in use, it had become even more impossible than ever to continue the war; we should no longer miss an opportunity to end it with an excuse to wait for a favorable term [of the surrender]." The United States had now established themselves as a nuclear power in the world, and shown that they had surpassed other nations in nuclear research and development as well as created the most powerful weapon known to mankind. In a diary entry by Walter Brown, he writes that the President had come into the ward room and "pointed out that it was 20,000 more powerful than TNT." The President was relieved when he received news of the bomb being dropped as there were huge expenditures behind the Manhattan Project, and he feared that it would not have paid off. </p>
+    </div>
+</body>
