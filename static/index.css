@@ -66,3 +66,8 @@
 .underline {
     text-decoration: underline;
 }
+
+.page-footer {
+    background-color: #221E20;
+    color: #F1B379
+}
