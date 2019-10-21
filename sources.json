@@ -3,27 +3,56 @@
         {
             "displayName" : "National Academy of Sciences on Atomic Fission",
             "citation" : "Report of National Academy of Sciences on Atomic Fission, February 6, 1989. https://nsarchive2.gwu.edu/nukevault/ebb525-The-Atomic-Bomb-and-the-End-of-World-War-II/documents/001a.pdf.",
-            "annotation" : "This is a letter to President Jewett of the National Academy of Sciences addressing the meeting of Dr.Briggs' Uranium Committee discussing why the United States should begin to make advancements in nuclear research and development specifically on nuclear weapons."
+            "annotation" : "This is a letter to President Jewett of the National Academy of Sciences addressing the meeting of Dr.Briggs' Uranium Committee discussing why the United States should begin to make advancements in nuclear research and development specifically on nuclear weapons.",
+            "url" : "https://nsarchive2.gwu.edu/nukevault/ebb525-The-Atomic-Bomb-and-the-End-of-World-War-II/documents/001a.pdf"
         },
         {
             "displayName" : "The Manhattan Project",
             "citation" : "“The Manhattan Project.” Atomic Heritage Foundation, May 12, 2017. https://www.atomicheritage.org/history/manhattan-project.",
-            "annotation" : ""
+            "annotation" : "",
+            "url" : "https://www.atomicheritage.org/history/manhattan-project"
         },
         {
             "displayName" : "The Manhattan Project - USHistory.org",
             "citation" : "“The Manhattan Project.” ushistory.org. Independence Hall Association. Accessed October 20, 2019. http://www.ushistory.org/us/51f.asp.",
-            "annotation" : ""
+            "annotation" : "",
+            "url" : "http://www.ushistory.org/us/51f.asp"
         },
         {
-            "displayName" : "",
-            "citation" : "",
-            "annotation" : ""
+            "displayName" : "Nuclear Power in the World Today",
+            "citation" : "“Nuclear Power in the World Today.” Nuclear Power Today | Nuclear Energy - World Nuclear Association, https://www.world-nuclear.org/information-library/current-and-future-generation/nuclear-power-in-the-world-today.aspx.",
+            "annotation" : "",
+            "url" : "https://www.world-nuclear.org/information-library/current-and-future-generation/nuclear-power-in-the-world-today.aspx"
         },
         {
-            "displayName" : "",
-            "citation" : "",
-            "annotation" : ""
+            "displayName" : "Fukushima Accident",
+            "citation" : "“Fukushima Accident.” Fukushima Daiichi Accident - World Nuclear Association, https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/fukushima-accident.aspx.",
+            "annotation" : "",
+            "url" : "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/fukushima-accident.aspx"
+        },
+        {
+            "displayName" : "Radioisotopes in Water Resources",
+            "citation" : "“Radioisotopes in Water Resources.” Radioisotopes in Water Resources & the Environment - World Nuclear Association, https://www.world-nuclear.org/information-library/non-power-nuclear-applications/radioisotopes-research/radioisotopes-in-water-resources-the-environment.aspx.",
+            "annotation" : "",
+            "url" : "https://www.world-nuclear.org/information-library/non-power-nuclear-applications/radioisotopes-research/radioisotopes-in-water-resources-the-environment.aspx"
+        },
+        {
+            "displayName" : "Cold War History",
+            "citation" : "History.com Editors. “Cold War History.” History.com, A&E Television Networks, 27 Oct. 2009, History.com Editors. “Cold War History.” History.com, A&E Television Networks, 27 Oct. 2009, https://www.history.com/topics/cold-war/cold-war-history..",
+            "annotation" : "",
+            "url" : "https://www.history.com/topics/cold-war/cold-war-history"
+        },
+        {
+            "displayName" : "Cuban Missile Crisis",
+            "citation" : "History.com Editors. “Cuban Missile Crisis.” History.com. A&E Television Networks, January 4, 2010. https://www.history.com/topics/cold-war/cuban-missile-crisis.",
+            "annotation" : "",
+            "url" : "https://www.history.com/topics/cold-war/cuban-missile-crisis"
+        },
+        {
+            "displayName" : "Nuclear Medicine Applications",
+            "citation" : "“Nuclear Medicine Applications.” ANS. Accessed October 21, 2019. http://nuclearconnect.org/know-nuclear/applications/medical-uses.",
+            "annotation" : "",
+            "url" : "http://nuclearconnect.org/know-nuclear/applications/medical-uses"
         },
         {
             "displayName" : "",

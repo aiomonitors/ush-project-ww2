@@ -51,3 +51,15 @@
             </ul>
         </div>
     </nav>
+    <div class="container-fluid">
+        <div class="jumbotron" style="width: 100%; background-color: #221E20; color: white">
+            <h3 class="display-4 discoders-alt animate bounceIn text-center">Sources</h2>       
+        </div>
+    </div>
+    {% for item in sources %}
+        <div class="container">
+            <h4 style="text-align: center"><a href="{{ item['url'] }}" style="color:#F1B379">{{ item['displayName'] }}</a></h4>
+            <p>{{ item['citation'] }}</p>
+        </div>
+    {% endfor %}
+</body>
