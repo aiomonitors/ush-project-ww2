@@ -73,7 +73,7 @@ tweepy==3.7.0
 typed-ast==1.1.0
 urllib3==1.24.1
 uuid==1.30
-websockets==3.4
+websockets==9.1
 Werkzeug==0.14.1
 wrapt==1.10.11
 xmltodict==0.4.2
